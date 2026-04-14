@@ -1,0 +1,59 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 10s
+
+# Optional alert rules file(s). Create this file when you start adding alerts.
+rule_files:
+  - /etc/prometheus/alerts/*.yml
+
+# Optional Alertmanager integration.
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            # - alertmanager:9093
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets:
+          - localhost:9090
+        labels:
+          service: prometheus
+          env: lab
+
+  - job_name: node_exporter
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      # Primary monitored server(s).
+      - targets:
+          - 192.168.1.196:9100
+        labels:
+          service: node-exporter
+          env: lab
+          role: server
+
+      # Optional: local exporter on the Prometheus host.
+      # Keep this disabled if no local node_exporter is running,
+      # otherwise Grafana may default to it and show N/A.
+      # - targets:
+      #     - localhost:9100
+      #   labels:
+      #     service: node-exporter
+      #     env: lab
+      #     role: monitoring-host
+
+      # Add your other server(s) here.
+      # - targets:
+      #     - 192.168.1.197:9100
+      #   labels:
+      #     service: node-exporter
+      #     env: lab
+      #     role: server
+
+    # Makes Grafana legends friendlier than raw IP:port only.
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
