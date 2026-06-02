@@ -1,0 +1,15 @@
+[Unit]
+Description=Proxmox MCP Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/proxmox-mcp
+ExecStart=/opt/proxmox-mcp/venv/bin/python /opt/proxmox-mcp/mcp_http_server.py
+Restart=always
+RestartSec=5
+User=root
+Environment="PORT=5002"
+
+[Install]
+WantedBy=multi-user.target

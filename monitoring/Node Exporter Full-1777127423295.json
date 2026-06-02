@@ -1,42 +1,4 @@
 {
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "11.6.1"
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -62,7 +24,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 1,
-  "id": null,
   "links": [
     {
       "icon": "external link",
@@ -115,7 +76,8 @@
             "mode": "percentage",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "dark-yellow",
@@ -163,7 +125,7 @@
         "text": {},
         "valueMode": "color"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -242,7 +204,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -280,7 +243,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -325,7 +288,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -363,7 +327,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -398,7 +362,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -436,7 +401,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -481,7 +446,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -519,7 +485,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -563,7 +529,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -601,7 +568,7 @@
         "showThresholdMarkers": true,
         "sizing": "auto"
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -622,7 +589,6 @@
         "type": "prometheus",
         "uid": "${ds_prometheus}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -643,7 +609,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               }
             ]
           },
@@ -676,7 +643,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -696,7 +663,6 @@
         "type": "prometheus",
         "uid": "${ds_prometheus}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -718,7 +684,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -755,7 +722,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -775,7 +742,6 @@
         "type": "prometheus",
         "uid": "${ds_prometheus}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -797,7 +763,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -834,7 +801,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -854,7 +821,6 @@
         "type": "prometheus",
         "uid": "${ds_prometheus}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -876,7 +842,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "rgba(50, 172, 45, 0.97)"
+                "color": "rgba(50, 172, 45, 0.97)",
+                "value": 0
               },
               {
                 "color": "rgba(237, 129, 40, 0.89)",
@@ -917,7 +884,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -938,7 +905,6 @@
         "type": "prometheus",
         "uid": "${ds_prometheus}"
       },
-      "description": "",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -960,7 +926,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "red",
@@ -997,7 +964,7 @@
         "textMode": "auto",
         "wideLayout": true
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -1060,6 +1027,7 @@
               "type": "linear"
             },
             "showPoints": "never",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -1076,7 +1044,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               }
             ]
           },
@@ -1181,7 +1150,7 @@
           "sort": "desc"
         }
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -1278,6 +1247,7 @@
               "type": "linear"
             },
             "showPoints": "never",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -1294,7 +1264,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               }
             ]
           },
@@ -1395,7 +1366,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -1481,6 +1452,7 @@
               "type": "linear"
             },
             "showPoints": "never",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -1496,7 +1468,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               }
             ]
           },
@@ -1537,7 +1510,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -1596,6 +1569,7 @@
               "type": "linear"
             },
             "showPoints": "never",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -1613,7 +1587,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": 0
               }
             ]
           },
@@ -1641,7 +1616,7 @@
           "sort": "none"
         }
       },
-      "pluginVersion": "11.6.1",
+      "pluginVersion": "12.4.2",
       "targets": [
         {
           "editorMode": "code",
@@ -15130,7 +15105,7 @@
                     "id": "custom.hideFrom",
                     "value": {
                       "legend": false,
-                      "tooltip": false,
+                      "tooltip": true,
                       "viz": true
                     }
                   }
@@ -15291,7 +15266,7 @@
                     "id": "custom.hideFrom",
                     "value": {
                       "legend": false,
-                      "tooltip": false,
+                      "tooltip": true,
                       "viz": true
                     }
                   }
@@ -15442,8 +15417,9 @@
       "type": "row"
     }
   ],
+  "preload": false,
   "refresh": "1m",
-  "schemaVersion": 41,
+  "schemaVersion": 42,
   "tags": [
     "linux"
   ],
@@ -15451,9 +15427,8 @@
     "list": [
       {
         "current": {
-          "selected": true,
-          "text": "Prometheus",
-          "value": "Prometheus"
+          "text": "prometheus",
+          "value": "ffj1i5qf6kmbkb"
         },
         "includeAll": false,
         "label": "Datasource",
@@ -15466,7 +15441,6 @@
       },
       {
         "current": {
-          "selected": true,
           "text": "node_exporter",
           "value": "node_exporter"
         },
@@ -15485,14 +15459,14 @@
         },
         "refresh": 1,
         "regex": "",
+        "regexApplyTo": "value",
         "sort": 1,
         "type": "query"
       },
       {
         "current": {
-          "selected": true,
           "text": "All",
-          "value": ".*"
+          "value": "$__all"
         },
         "datasource": {
           "type": "prometheus",
@@ -15509,12 +15483,12 @@
         },
         "refresh": 1,
         "regex": "",
+        "regexApplyTo": "value",
         "sort": 1,
         "type": "query"
       },
       {
         "current": {
-          "selected": true,
           "text": "192.168.1.196:9100",
           "value": "192.168.1.196:9100"
         },
@@ -15533,6 +15507,7 @@
         },
         "refresh": 1,
         "regex": "",
+        "regexApplyTo": "value",
         "sort": 1,
         "type": "query"
       }
@@ -15546,7 +15521,6 @@
   "timezone": "browser",
   "title": "Node Exporter Full",
   "uid": "rYdddlPWk",
-  "version": 101,
-  "weekStart": "",
-  "gnetId": 1860
+  "version": 2,
+  "weekStart": ""
 }

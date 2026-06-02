@@ -1,0 +1,7 @@
+proxmoxer>=2.0.1
+requests>=2.31.0
+mcp>=1.1.0
+starlette>=0.37.0
+uvicorn>=0.30.0
+flask>=3.0.0
+python-dotenv>=1.0.0

@@ -1,0 +1,15 @@
+[Unit]
+Description=Kali MCP Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/kali-mcp
+ExecStart=/opt/kali-mcp/venv/bin/python /opt/kali-mcp/mcp_http_server.py
+Restart=always
+RestartSec=5
+User=root
+Environment="PORT=5001"
+
+[Install]
+WantedBy=multi-user.target

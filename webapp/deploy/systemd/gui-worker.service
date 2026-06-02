@@ -1,0 +1,15 @@
+[Unit]
+Description=GUI Python Worker
+After=network.target mariadb.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/gui-worker
+EnvironmentFile=/opt/gui-worker/.env
+ExecStart=/opt/gui-worker/venv/bin/python /opt/gui-worker/worker.py
+Restart=always
+RestartSec=3
+User=root
+
+[Install]
+WantedBy=multi-user.target
